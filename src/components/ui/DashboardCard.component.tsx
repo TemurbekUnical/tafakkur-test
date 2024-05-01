@@ -1,5 +1,4 @@
 import moneyFormat from "@/utils/moneyFormat";
-import React from "react";
 
 const DashboardCard = ({ price, title }: { title: string; price: number }) => {
   return (
