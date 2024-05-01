@@ -24,7 +24,7 @@ function InputForm<FormNames extends Record<string, any>>({
   label = "",
   disabled = false,
   placeholder = "Введите информацию",
-  className = "",
+  className = " ",
   control,
   name,
   required,
