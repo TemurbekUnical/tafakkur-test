@@ -1,4 +1,3 @@
-import { AxiosHeaders, AxiosRequestConfig } from "axios";
 import { FieldPath, RegisterOptions } from "react-hook-form";
 
 export interface Option<TValue = any, TLabel = string> {
@@ -17,18 +16,6 @@ export type ArgumentType<T extends (props: any) => any> = Parameters<T>[0];
 export type Required<T> = {
   [P in keyof T]-?: T[P];
 };
-export interface TError {
-  response: {
-    data: {
-      detail: string;
-    };
-    status: number;
-    statusText: string;
-    headers: AxiosHeaders;
-    config: AxiosRequestConfig;
-    request: unknown;
-  };
-}
 export type TableData = {
   _id: string;
   createdAt: string;
