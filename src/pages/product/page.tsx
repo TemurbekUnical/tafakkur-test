@@ -46,7 +46,13 @@ const Product = () => {
           />
         </div>
       </div>
-      <Modal isOpen={modal} onClose={() => setModal(false)}>
+      <Modal
+        isOpen={modal}
+        onClose={() => {
+          setModal(false);
+          setSelected(undefined);
+        }}
+      >
         <ProductForm onSubmit={onCreate} selected={selected} />
       </Modal>
     </>
