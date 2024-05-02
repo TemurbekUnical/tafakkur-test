@@ -29,7 +29,7 @@ const Product = () => {
       <div className="">
         <div className="">
           <Button
-            className="block ml-auto my-8 w-40 justify-end"
+            className="block ml-auto my-8 !w-40 justify-end"
             onClick={() => setModal(true)}
           >
             Add product
