@@ -32,7 +32,7 @@ const Product = () => {
             className="block ml-auto my-8 w-40 justify-end"
             onClick={() => setModal(true)}
           >
-            Qo'shish
+            Add product
           </Button>
 
           <Table
